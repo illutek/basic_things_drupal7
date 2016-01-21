@@ -13,8 +13,15 @@ Inhoud:
 name = Leeg 
 description = Beschrijving  
 core = 7.x 
-engine = phptemplate 
+engine = phptemplate
+
+;CSS
 stylesheets[all][] = css/style.css
+
+;JS
+;scripts[]   =   js/bootstrap.min.js
+
+;REGIONS
 regions[highlighted] = highlighted 
 regions[sidebar_first] = sidebar first 
 regions[sidebar_second] = sidebar second 
@@ -22,8 +29,6 @@ regions[content] = content
 regions[help] = help 
 regions[header] = header 
 regions[footer] = footer
-
-
 
 
 Maak je een responsive site via mediaqueries? Voeg toe in het .info-bestand (NIET als je skeleton/bootstrap gebruikt):
@@ -95,6 +100,7 @@ Figuur gebruikt? Plaats achter src=”  dit basispad:
 
 
 Voorwaardelijke divs:
+Beter op volgende link https://github.com/illutek/conditional-fields
 
 De inhoud:
 <?php if ($page['zijbalk']) { ?>
