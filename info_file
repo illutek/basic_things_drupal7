@@ -1,0 +1,14 @@
+name = Theme name
+description = 
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+
+regions[content]        = Content
+regions[help]           = Help
+regions[footer]         = Footer
+
+; Information added by drupal.org packaging script on 2013-02-04
+version = "7.x-1.5"
+core = "7.x"
+project = "Theme name"

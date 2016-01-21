@@ -1,0 +1,18 @@
+<div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- de inlog button en user print -->
+                <li><?php global $user; if ($user->uid != 0)
+                    { print '<li class="first">' .t('').
+                        '<a href="' .url('user/'.$user->uid). '">' .$user->name. '</a>
+                        </li>'; print '<li>
+                        <a href="' .url('user/logout'). '">' .t('Logout'). '</a>
+                        </li>'; } else { print '<li class="first">
+                        <a href="' .url('user'). '">' .t('Login'). '</a>
+                        </li>'; print '<li>
+                        <a href="' .url('user/register'). '">' .t(''). '</a>
+                        </li>'; } ?></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
